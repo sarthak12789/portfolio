@@ -2,9 +2,12 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
    background-color: rgba(58, 234, 240, 0.397);
+   height:100%;
+   margin:20px;
 }
 header
 {
@@ -14,15 +17,22 @@ header
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    margin:0px;
+    flex-shrink: 0;
+    position:sticky;
+    top:0px;
 }
 nav{
     background-color: rgb(119, 166, 195);
     padding:5px;
     align-self:center;
+    border-radius: 10px;
+    margin:15px 0px;
+    
 }
 a{
     text-decoration: none;
-    margin:5px;
+    margin:8px;
     cursor: pointer;
     color:white;
     
@@ -34,14 +44,15 @@ a{
     flex-direction: column;
     color:white;
     flex-direction: column;
-
+      align-items: start;
     padding:10px;
     margin-top:20px;
 
 }
 .intro_div{
     padding:20px;
-    width:450px;
+    width:70%;
+    text-align:center;
     background-color: rgba(75, 64, 228, 0.383);
     border-radius: 25px;
     font-size: 20px;
@@ -49,7 +60,7 @@ a{
 .buttons
 {   display:inline-block;
     padding:10px;
-    margin:15px 0px 10px 90px;
+    
 }
 
 button
@@ -79,14 +90,64 @@ gap:30px;
   margin-top:30px;
 }
 #image_div{
-    width:800px;
+    width:80%;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
     width:100%;
+    flex-wrap: wrap;
     gap:10;
     padding:5px;
     border:5px solid rgb(255, 255, 255);
    border-radius:50px;
 }
+
+#about_me
+{   padding:15px;
+    margin-top:50px;
+    background-color: rgba(252, 252, 252, 0.542);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(0, 0, 0);
+    font-size:22px;
+    border-radius:25px;
+}
+
+#projects
+{
+ background-color: rgba(0, 47, 255, 0.283);
+ margin:70px 10px;
+ padding:10px;
+ display:flex;
+ flex-direction: column;
+ flex-shrink: 1;
+ text-align: center;
+ height:100vh;
+}   
+.main_div
+{
+    display:flex;
+    height:100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:100%;
+}
+.portfolio
+{
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding:10px;
+    margin:10px 0px;
+    background-color: rgba(251, 251, 251, 0.24);
+    border-radius: 15px;;
+}
+.portfolio p
+{
+   font-size: 25px;
+}
+
 
