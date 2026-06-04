@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">VOW project thumbnail</title>
+  <desc id="desc">Dark thumbnail with indigo accent for a real-time collaboration platform.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#1a1a26"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5E6AD2"/>
+      <stop offset="100%" stop-color="#7f89ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="36" fill="url(#bg)"/>
+  <circle cx="650" cy="126" r="104" fill="#5E6AD2" opacity="0.18"/>
+  <circle cx="162" cy="370" r="96" fill="#ffffff" opacity="0.05"/>
+  <rect x="72" y="72" width="656" height="40" rx="20" fill="#181818"/>
+  <rect x="72" y="144" width="410" height="22" rx="11" fill="#FFFFFF" opacity="0.78"/>
+  <rect x="72" y="180" width="300" height="16" rx="8" fill="#A1A1AA" opacity="0.72"/>
+  <text x="72" y="294" fill="#FFFFFF" font-family="Space Grotesk, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-2">VOW</text>
+  <text x="72" y="344" fill="#A1A1AA" font-family="Space Grotesk, Arial, sans-serif" font-size="26">Real-time collaboration platform</text>
+  <rect x="72" y="394" width="128" height="40" rx="20" fill="url(#accent)"/>
+  <rect x="212" y="394" width="148" height="40" rx="20" fill="#232333"/>
+  <rect x="372" y="394" width="116" height="40" rx="20" fill="#232333"/>
+</svg>

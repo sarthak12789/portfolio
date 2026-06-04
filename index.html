@@ -3,96 +3,287 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sarthak Kumar's portfolio showcasing projects, skills, education, and contact information.">
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
+    <title>Sarthak Kumar | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>PORTFOLIO</h1>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#about_me">ABOUT ME</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#">CONTACT ME</a>
-        </nav>
+    <header class="site-header" id="top">
+        <div class="container site-header__inner">
+            <a class="brand" href="#top" aria-label="Sarthak Kumar portfolio home">
+                <span class="brand__mark">SK</span>
+                <span class="brand__text">Sarthak Kumar</span>
+            </a>
+            
+            <nav class="site-nav" aria-label="Primary">
+                <a class="nav-link" href="#intro">Home</a>
+                <a class="nav-link" href="#about_me">About me</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="https://github.com/sarthak12789" target="_blank" rel="noopener">GitHub</a>
+                <a class="nav-link" href="https://www.linkedin.com/in/sarthak-kumar-70b070342" target="_blank" rel="noopener">LinkedIn</a>
+            </nav>
+            <button class="hamburger" aria-label="Toggle Menu"> <span></span> <span></span> <span></span> </button>
+        </div>
     </header>
     <main>
-        <section id="intro">
-            <div class="intro_div">
-                <h2 style="padding:10px;">HI I'M SARTHAK KUMAR</h2>
-                <p> A Computer Science and Engineering student
-                </p>
-            </div>
-            <div class="buttons">
-                <button type="button">CONTACT ME</button>
-                <button type="button">RESUME</button>
-            </div>
-        </section>
-        <section id="skills">
-
-            <h2>SKILLS</h2>
-            <div id="image_div">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1853px-C_Programming_Language.svg.png"
-                    height="80px" alt="c language">
-                <img src="https://cdn-icons-png.freepik.com/512/6132/6132222.png" height="80px" alt="c++ language">
-                <img style="border-radius:50px;"
-                    src="https://play-lh.googleusercontent.com/9zvNJHedNg_6lOdwcodODMVsyeHKxuTIpnbBzomRGGZAp_vKVXnd5SlF8XZcXyGYjQ"
-                    height="80px" alt="dsa">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png"
-                    alt="html" height="80px">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/120px-Official_CSS_Logo.svg.png"
-                    height="80px" style="border-radius:20px" alt="css">
-            </div>
-        </section>
-        <section id="about_me">
-            <h2 STYLE="margin:10px;">ABOUT ME</h2>
-            <p> I am computer science student having a
-                strong interest in web development, problem-solving, and exploring new technologies.
-                I enjoy building projects that combine creativity with logic, and I’m constantly
-                learning to improve my coding and design skills.</p>
-
-            <div style="padding:20px;">
-                <h3>ACADEMICS ACHIVEMENTS</h3>
-                <ol>
-                    <li>Scored 93.8% in 12th</li>
-                    <li>AIR 78012 IN JEE MAINS</li>
-                </ol>
-            </div>
-        </section>
-
-        <section id="projects" height=auto;>
-            <h2 style="font-size:35px; padding: 5px;">PROJECTS</h2>
-            <div class="main_div">
-                <div class="portfolio">
-                    <h3>PORTFOLIO</h3>
-                    <img src="./Screenshot (352).png" alt="PORTFOLIO" height="40%" width="100%" ">
-                    <p>"Designed and developed a personal portfolio website using HTML, CSS, and JavaScript to showcase
-                        projects and skills."</p>
+        <section class="section hero" id="intro" data-reveal>
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <p class="section__eyebrow">Computer Science and Engineering Student</p>
+                    <h1 class="hero__headline">Sarthak Kumar.</h1>
+                    <p class="hero__lead">I design and build responsive web experiences with clean UI, strong frontend systems,
+                        and practical backend integrations.</p>
+                    <div class="hero__actions">
+                        <a class="button button--solid" href="#contact">Contact me</a>
+                        <a class="button button--ghost" href="#projects">View projects</a>
+                    </div>
+                    <ul class="hero__highlights" aria-label="Highlights">
+                        <li>React + Next.js</li>
+                        <li>Node.js + Express</li>
+                        <li>DSA + Competitive Programming</li>
+                    </ul>
                 </div>
-                <div class="portfolio">
-                    <h3>STUDENT TRACKSHEET</h3>
-                    <p> it is a console based program written in c language,it's features are tracking attendence,academic record, achievements record, peronal information and various other features   
-                    </p>
+                <aside class="hero__panel card">
+                    <p class="hero__panel-label">Profile snapshot</p>
+                    <h2 class="hero__panel-title">Focused on modern web apps and problem solving.</h2>
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <strong>300+</strong>
+                            <span>DSA problems</span>
+                        </div>
+                        <div class="hero__stat">
+                            <strong>1250+</strong>
+                            <span>CodeChef rating</span>
+                        </div>
+                        <div class="hero__stat">
+                            <strong>8.17</strong>
+                            <span>CGPA</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <section class="section skills" id="skills" data-reveal>
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__eyebrow">Skills</p>
+                    <h2 class="section__title">Built for frontend depth, backend logic, and clean execution.</h2>
+                    <p class="section__lead">A concise view of the stack I use most often in projects and product work.</p>
+                </div>
+                <div class="skills__grid">
+                    <article class="skill-group card" data-stagger-group>
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-stagger-item>C / C++</span>
+                            <span class="skill-tag" data-stagger-item>JavaScript</span>
+                            <span class="skill-tag" data-stagger-item>Python</span>
+                        </div>
+                    </article>
+                    <article class="skill-group card" data-stagger-group>
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-stagger-item>HTML5</span>
+                            <span class="skill-tag" data-stagger-item>CSS3</span>
+                            <span class="skill-tag" data-stagger-item>React.js</span>
+                            <span class="skill-tag" data-stagger-item>Next.js</span>
+                            <span class="skill-tag" data-stagger-item>Redux Toolkit</span>
+                        </div>
+                    </article>
+                    <article class="skill-group card" data-stagger-group>
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-stagger-item>Node.js</span>
+                            <span class="skill-tag" data-stagger-item>Express.js</span>
+                            <span class="skill-tag" data-stagger-item>REST APIs</span>
+                        </div>
+                    </article>
+                    <article class="skill-group card" data-stagger-group>
+                        <h3>Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-stagger-item>Git</span>
+                            <span class="skill-tag" data-stagger-item>GitHub</span>
+                            <span class="skill-tag" data-stagger-item>Docker</span>
+                            <span class="skill-tag" data-stagger-item>VS Code</span>
+                            <span class="skill-tag" data-stagger-item>Postman</span>
+                            <span class="skill-tag" data-stagger-item>Figma</span>
+                            <span class="skill-tag" data-stagger-item>Webflow</span>
+                        </div>
+                    </article>
+                    <article class="skill-group card" data-stagger-group>
+                        <h3>Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-stagger-item>Socket.io</span>
+                            <span class="skill-tag" data-stagger-item>WebRTC</span>
+                            <span class="skill-tag" data-stagger-item>JWT</span>
+                            <span class="skill-tag" data-stagger-item>Gemini API</span>
+                            <span class="skill-tag" data-stagger-item>Groq API</span>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
-        <div id="contact">
-            <form >
-            <h2>CONTACT ME</h2>
-            <label for="name"></label>
-            <input type="text" placeholder="Name" name="name" id="name" required>
-            <label for="email"></label>
-            <input type="email" placeholder="Email" name="email" id="email" required>
-            <label for="message"></label>
-             <textarea name="message" id="message" required rows="5" cols="20"></textarea>
-             <button type="submit">contact</button>
-        </form>
-    </div>
+        <section class="section about" id="about_me" data-reveal>
+            <div class="container about__grid">
+                <div class="section__header">
+                    <p class="section__eyebrow">About me</p>
+                    <h2 class="section__title">A builder focused on clean interfaces and reliable products.</h2>
+                    <p class="section__lead">I am a computer science student with a strong interest in web development,
+                        problem-solving, and exploring new technologies.</p>
+                </div>
+                <article class="about__summary card">
+                    <p class="about__text">I enjoy building projects that combine creativity with logic, and I’m constantly
+                        learning to improve my coding and design skills. My work usually sits at the intersection of
+                        frontend experience, backend communication, and practical product thinking.</p>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <strong>Ajay Kumar Garg Engineering College</strong>
+                            <span>Expected Jul 2028</span>
+                        </div>
+                        <div class="about__stat">
+                            <strong>CGPA 8.17/10</strong>
+                            <span>B.Tech in CSE</span>
+                        </div>
+                        <div class="about__stat">
+                            <strong>93.8%</strong>
+                            <span>Class 12 score</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="about__achievements card">
+                    <h3>Academic achievements</h3>
+                    <ul class="about__list">
+                        <li>Scored 93.8% in 12th</li>
+                        <li>AIR 78012 in JEE Mains</li>
+                        <li>Regularly participate in competitive programming contests</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="section projects" id="projects" data-reveal>
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__eyebrow">Projects</p>
+                    <h2 class="section__title">Selected work that shows product thinking and implementation depth.</h2>
+                    <p class="section__lead">Featured projects from web apps, collaboration tools, and AI-assisted interfaces.</p>
+                </div>
+                <div class="projects__grid">
+                    
+                    <article class="project-card card">
+                        <img class="project-card__thumbnail" src="assets/project-vow.svg"
+                            alt="Thumbnail illustration for VOW, a virtual organized world collaboration platform">
+                        <div class="project-card__body">
+                            <p class="project-card__eyebrow">Live collaboration platform</p>
+                            <h3 class="project-card__title">VOW - Virtual Organized World</h3>
+                            <p class="project-card__description">A real-time collaboration platform for chat, voice, and video
+                                communication with secure authentication and AI-powered meeting support.</p>
+                            <div class="project-card__meta">
+                                <span class="project-card__pill">React</span>
+                                <span class="project-card__pill">Node.js</span>
+                                <span class="project-card__pill">Socket.io</span>
+                                <span class="project-card__pill">WebRTC</span>
+                                <span class="project-card__pill">Gemini API</span>
+                            </div>
+                            <ul class="project-card__list">
+                                <li>Built secure auth, OTP verification, and RBAC.</li>
+                                <li>Added instant messaging and peer-to-peer media calls.</li>
+                                <li>Generated AI meeting summaries and action items.</li>
+                            </ul>
+                            <div class="project-card__actions">
+                                <a class="button button--solid" href="https://vow-live.me" target="_blank" rel="noopener">View live</a>
+                                <a class="button button--ghost" href="https://github.com/sarthak12789" target="_blank" rel="noopener">View code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card card">
+                        <img class="project-card__thumbnail" src="assets/project-resume.svg"
+                            alt="Thumbnail illustration for the AI Resume Analyzer project">
+                        <div class="project-card__body">
+                            <p class="project-card__eyebrow">AI workflow</p>
+                            <h3 class="project-card__title">AI Resume Analyzer</h3>
+                            <p class="project-card__description">An AI-powered resume analysis platform that generates role-specific
+                                feedback, scoring, and interview preparation guidance.</p>
+                            <div class="project-card__meta">
+                                <span class="project-card__pill">React</span>
+                                <span class="project-card__pill">Node.js</span>
+                                <span class="project-card__pill">Groq API</span>
+                            </div>
+                            <ul class="project-card__list">
+                                <li>Analyzed resumes and GitHub repositories dynamically.</li>
+                                <li>Generated interview questions and improvement suggestions.</li>
+                                <li>Added validation and anti-cheating checks.</li>
+                            </ul>
+                            <div class="project-card__actions">
+                                <a class="button button--solid" href="https://ai-resume-analyzer-psi-ten.vercel.app/" target="_blank" rel="noopener">View live</a>
+                                <a class="button button--ghost" href="https://github.com/sarthak12789" target="_blank" rel="noopener">View code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section contact" id="contact" data-reveal>
+            <div class="container contact__grid">
+                <aside class="contact-card card">
+                    <p class="section__eyebrow">Contact</p>
+                    <h2 class="section__title">Let’s build something polished.</h2>
+                    <p class="section__lead">Open to internships, collaborative projects, and frontend/backend work.</p>
+                    <ul class="contact-list">
+                        <li>
+                            <span>Email</span>
+                            <a href="mailto:mrtechy404@gmail.com">mrtechy404@gmail.com</a>
+                        </li>
+                        <li>
+                            <span>Phone</span>
+                            <a href="tel:+917906167133">7906167133</a>
+                        </li>
+                        <li>
+                            <span>Location</span>
+                            <span>Ghaziabad, India</span>
+                        </li>
+                    </ul>
+                </aside>
+                <form class="contact-form card">
+                    <h3>Send a message</h3>
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Your name" name="name" id="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="you@example.com" name="email" id="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Tell me about your project or opportunity"
+                            required rows="6"></textarea>
+                    </div>
+                    <button class="button button--solid" type="submit">Send message</button>
+                </form>
+            </div>
+        </section>
     </main>
-     
+    <footer class="site-footer" id="footer" data-reveal>
+        <div class="container site-footer__inner">
+            <p>© 2026 Sarthak Kumar. Built with HTML, CSS, and JavaScript.</p>
+            <div class="footer-links">
+                <a href="#top">Back to top</a>
+                <a href="#projects">Projects</a>
+                <a href="mailto:mrtechy404@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/animations.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
 </body>
 
 </html>
